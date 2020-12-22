@@ -679,7 +679,8 @@ class _SessionsState extends State<Sessions> {
                                 onPressed: () {}),
                             Text(
                               'Sessions',
-                              style: TextStyle(color: Colors.green),
+                              style:
+                                  TextStyle(color: Colors.green, fontSize: 10),
                             )
                           ],
                         ),
@@ -698,7 +699,7 @@ class _SessionsState extends State<Sessions> {
                                       MaterialPageRoute(
                                           builder: (context) => MyRequest()));
                                 }),
-                            Text('My Requests')
+                            Text('My Requests', style: TextStyle(fontSize: 10))
                           ],
                         ),
                       ),
@@ -715,7 +716,7 @@ class _SessionsState extends State<Sessions> {
                                       MaterialPageRoute(
                                           builder: (context) => Packages()));
                                 }),
-                            Text('Packages')
+                            Text('Packages', style: TextStyle(fontSize: 10))
                           ],
                         ),
                       ),
@@ -733,14 +734,15 @@ class _SessionsState extends State<Sessions> {
                                       MaterialPageRoute(
                                           builder: (context) => Profile()));
                                 }),
-                            Text('Profile')
+                            Text('Profile', style: TextStyle(fontSize: 10))
                           ],
                         ),
                       ),
                     ],
                   ),
                   Positioned(
-                    top: -10,
+                    top: -5,
+                    bottom: -5,
                     child: Container(
                       child: Column(
                         children: [
@@ -748,7 +750,7 @@ class _SessionsState extends State<Sessions> {
                               icon: Icon(
                                 Icons.home,
                                 color: Colors.grey,
-                                size: 60,
+                                size: 40,
                               ),
                               onPressed: () {
                                 Navigator.pushReplacement(
@@ -756,16 +758,13 @@ class _SessionsState extends State<Sessions> {
                                     MaterialPageRoute(
                                         builder: (context) => Home()));
                               }),
-                          SizedBox(
-                            height: 10,
-                          ),
                           Padding(
-                            padding: EdgeInsets.only(left: 30),
+                            padding: const EdgeInsets.only(left: 8.0),
                             child: Text(
                               'Home',
                               style: TextStyle(fontSize: 15),
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),

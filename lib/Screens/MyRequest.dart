@@ -496,9 +496,7 @@ class _MyRequestState extends State<MyRequest> {
                                   MaterialPageRoute(
                                       builder: (context) => Sessions()));
                             }),
-                        Text(
-                          'Sessions',
-                        )
+                        Text('Sessions', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
@@ -513,7 +511,7 @@ class _MyRequestState extends State<MyRequest> {
                             onPressed: () {}),
                         Text(
                           'My Requests',
-                          style: TextStyle(color: Colors.green),
+                          style: TextStyle(color: Colors.green, fontSize: 10),
                         )
                       ],
                     ),
@@ -531,7 +529,7 @@ class _MyRequestState extends State<MyRequest> {
                                   MaterialPageRoute(
                                       builder: (context) => Packages()));
                             }),
-                        Text('Packages')
+                        Text('Packages', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
@@ -549,14 +547,15 @@ class _MyRequestState extends State<MyRequest> {
                                   MaterialPageRoute(
                                       builder: (context) => Profile()));
                             }),
-                        Text('Profile')
+                        Text('Profile', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
                 ],
               ),
               Positioned(
-                top: -10,
+                top: -5,
+                bottom: -5,
                 child: Container(
                   child: Column(
                     children: [
@@ -564,7 +563,7 @@ class _MyRequestState extends State<MyRequest> {
                           icon: Icon(
                             Icons.home,
                             color: Colors.grey,
-                            size: 60,
+                            size: 40,
                           ),
                           onPressed: () {
                             Navigator.pushReplacement(
@@ -572,16 +571,13 @@ class _MyRequestState extends State<MyRequest> {
                                 MaterialPageRoute(
                                     builder: (context) => Home()));
                           }),
-                      SizedBox(
-                        height: 10,
-                      ),
                       Padding(
-                        padding: EdgeInsets.only(left: 30),
+                        padding: const EdgeInsets.only(left: 8.0),
                         child: Text(
                           'Home',
                           style: TextStyle(fontSize: 15),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),

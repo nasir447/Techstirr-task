@@ -123,7 +123,7 @@ class _HomeState extends State<Home> {
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     SizedBox(
-                                      width: width * 0.45,
+                                      width: width * 0.4,
                                     ),
                                     IconButton(
                                         icon: Icon(
@@ -320,7 +320,7 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => Sessions()));
                             }),
-                        Text('Sessions')
+                        Text('Sessions', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
@@ -338,7 +338,7 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => MyRequest()));
                             }),
-                        Text('My Requests')
+                        Text('My Requests', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
@@ -355,7 +355,7 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => Packages()));
                             }),
-                        Text('Packages')
+                        Text('Packages', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
@@ -373,14 +373,15 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(
                                       builder: (context) => Profile()));
                             }),
-                        Text('Profile')
+                        Text('Profile', style: TextStyle(fontSize: 10))
                       ],
                     ),
                   ),
                 ],
               ),
               Positioned(
-                top: -10,
+                top: -5,
+                bottom: -5,
                 child: Container(
                   child: Column(
                     children: [
@@ -388,19 +389,16 @@ class _HomeState extends State<Home> {
                           icon: Icon(
                             Icons.home,
                             color: Colors.green,
-                            size: 60,
+                            size: 40,
                           ),
                           onPressed: null),
-                      SizedBox(
-                        height: 10,
-                      ),
                       Padding(
-                        padding: EdgeInsets.only(left: 30),
+                        padding: const EdgeInsets.only(left: 8.0),
                         child: Text(
                           'Home',
                           style: TextStyle(color: Colors.green, fontSize: 15),
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
