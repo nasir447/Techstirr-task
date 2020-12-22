@@ -53,6 +53,13 @@ class _ProfileState extends State<Profile> {
                                 size: 35,
                               ),
                               onPressed: null),
+                          IconButton(
+                              icon: Icon(
+                                Icons.settings_cell,
+                                color: Colors.white,
+                                size: 35,
+                              ),
+                              onPressed: null),
                         ],
                       ),
                     )

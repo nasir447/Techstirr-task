@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:techstirr/Screens/Home.dart';
@@ -594,13 +595,15 @@ class _SessionsState extends State<Sessions> {
                                 unselectedLabelColor: Colors.grey,
                                 tabs: [
                                   Tab(
-                                    child: Text(
+                                    child: AutoSizeText(
                                       'Current Sessions',
+                                      maxLines: 1,
                                     ),
                                   ),
                                   Tab(
-                                    child: Text(
+                                    child: AutoSizeText(
                                       'Previous Sessions',
+                                      maxLines: 1,
                                     ),
                                   ),
                                 ]),
